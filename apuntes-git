@@ -1,0 +1,42 @@
+#Git Commands#
+
+git add ./ ---> Para subir al stage.
+ 
+git commit -m "" ---> Para hacer un comentario al archivo sudido al stage.
+
+git commit -am "" ---> Subir al stage y hacer el comentario todo de una vez.
+
+git log --oneline ---> Commit en una sola linea.
+ 
+git log ---> Te muesta los commit.
+
+git status -sb ---> Para ver el estado del repositorio local, el "-sb" es para hacer el status mas
+reducido.
+
+git reset --hard head~ ---> Esto sirve para volver al ultimo commit esto "~" se puede sustituir
+por el codigo del commit que de el "git log".
+
+git init ---> Subir el repositorio local a GitHub.
+echo "#pruebas" >> README.md
+git add README.md
+git commit -m "Adding README file"
+git branch -M main
+git remote add origin url_github
+git push -u origin master
+
+git clone url_github nombre_carpeta(opcinal) ---> Para unirse a un repositorio existente.
+git init
+git remote -v
+
+git tag –a v1.0.0 –m “Verion 1.0.0” ---> Etiquetas normalmente utilizadas para marcar versiones.
+ -a : nombre al tag
+ -m : mensaje mas especifico
+git push --tags ---> Para subir los tags.
+
+git branch ---> Ver las ramas que tengo.
+git branch nombre_rama ---> Crea un rama nueva.
+git branch -d nombre_rama ---> Borrar una rama.
+git branch -m nombre_nuevo_rama ---> Cambiar nombre la rama.
+
+git checkout nombre_rama ---> Sierve para cambiar de rama.
+git checkout -b nombre_rama ---> Crea una rama y te mueve directamente a ella.
