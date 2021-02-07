@@ -1,0 +1,14 @@
+PASOS PARA RECUPERAR MAQUINA
+
+Necesitamos iniciar el sistema con un llinux diferente al instalado.
+Ponemos una ISO de ubuntu en el DVD/CD ROM.
+Entramos en BIOS y arrancamos el otro sistema operativo.
+Iniciamos la VERSION DE PRUEBA de ubuntu.
+Abrimos un terminal.
+Necesitamos ser superusuario (sudo -s).
+Buscar punto de montaje (puede ser /mnt).
+Creamos un directorio de montaje (recuperar).
+Aversiguar partición del llinux instalado (fdisk -l).
+Sabemos que partición es porque tiene un "*" en la sección de arranque.
+Una vez averiguado la partición de llinux lo montamos en la carpeta creada anteriormente (mount /dev/sda1 /mnt/recuperar).
+El sistema a recuperar esta en la carpeta anteriormente.

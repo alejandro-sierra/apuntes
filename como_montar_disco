@@ -1,0 +1,9 @@
+PASOS PARA INSTALAR UN SEGUNDO DISCO DURO
+
+Instalar físicamente el nuevo disco duro.
+Iniciar el sistema.
+Averiguar  drivers asignados al nuevo disco, con al orden “fdisk -l”.
+Crear partición o particiones en la nueva unidad con “fdisk”.
+Formatear nueva unidad, con el comando “mkfs.ext4 [unidad nueva]”.
+Crear carpeta para montar.
+Montar unidad, disco duro, en la carpeta anteriormente montada "mount [disco/particion] [lugar de montaje (/mnt)]".
