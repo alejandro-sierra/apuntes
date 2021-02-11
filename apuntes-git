@@ -25,8 +25,7 @@ git remote add origin url_github
 git push -u origin master
 
 git clone url_github nombre_carpeta(opcinal) ---> Para unirse a un repositorio existente.
-git init
-git remote -v
+
 
 git tag –a v1.0.0 –m “Verion 1.0.0” ---> Etiquetas normalmente utilizadas para marcar versiones.
  -a : nombre al tag
